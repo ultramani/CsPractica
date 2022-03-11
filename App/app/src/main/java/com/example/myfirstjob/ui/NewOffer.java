@@ -39,7 +39,6 @@ public class NewOffer extends AppCompatActivity {
     private Button btnInscrib;
     private List<Offer> lOffers;
     private int position;
-    private int offerID;
     private Button btnRemove;
     private ConstraintLayout layContent;
     private ConstraintLayout layModal;
@@ -89,7 +88,6 @@ public class NewOffer extends AppCompatActivity {
 
 
             o = lOffers.get(position);
-            this.offerID = o.getOfferId();
             setStatusLayout(false);
             txtTitulo.setText(R.string.show_offer);
             showOffer(o);
@@ -277,7 +275,6 @@ public class NewOffer extends AppCompatActivity {
         //Debo ocultar el resto de botones
         //setStatusLayout(true);
         o.addSub(UserView.user.getEmail());
-        ;
         Manage manage = new Manage();
         manage.updateOffers(this, o);
         btnInscrib.setVisibility(View.INVISIBLE);
