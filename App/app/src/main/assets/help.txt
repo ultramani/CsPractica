@@ -1,0 +1,32 @@
+
+
+                                            PÁGINA DE AYUDA
+
+
+1. ACCESO A LA APLICACIÓN
+
+Para acceder a la aplicación es necesario registrarse. Si ya
+estás registrado, es necesario que inicies sesión.
+
+2. ALGUNAS DE LAS FUNCIONALIDADES
+
+Una vez ya se haya iniciado sesión en la aplicación, encontraremos
+diferentes funcionalidades:
+
+    - Publicar una oferta (botón +)
+    - Eliminar oferta *
+    - Modificar oferta *
+    - Ver ofertas propias (desplegable lateral)
+    - Ver ofertas generales (desplegable lateral)
+    - Filtrar ofertas (botón de lupa)
+    - Inscribirse a una oferta **
+    - Modificar perfil (desplegable lateral)
+
+
+
+
+* Solo se podrán eliminar y modificar tus ofertas. Para modificar
+o eliminar las ofertas, es necesario seleccionar una de ellas.
+
+** Para inscribirse a una oferta, es necesario acceder a la oferta.
+No se podrá insribir a una oferta publicada por uno mismo.
