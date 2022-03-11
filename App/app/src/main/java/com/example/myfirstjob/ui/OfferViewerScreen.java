@@ -31,7 +31,6 @@ import java.util.LinkedList;
 public class OfferViewerScreen extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
 
     private AppBarConfiguration mAppBarConfiguration;
-    private ActivityOfferViewerScreenBinding binding;
     private LinkedList<Offer> l;
     private LinkedList<Offer> list = new LinkedList<>();
     private SearchView svOfferFilter;
@@ -40,7 +39,7 @@ public class OfferViewerScreen extends AppCompatActivity implements View.OnClick
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        ActivityOfferViewerScreenBinding binding;
         binding = ActivityOfferViewerScreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -254,7 +253,7 @@ public class OfferViewerScreen extends AppCompatActivity implements View.OnClick
                                 .setTitle("Notificación")
                                 .create();
                         myAlert.show();
-                        ;
+                        
                     }
                 }
             }
