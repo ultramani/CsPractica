@@ -42,7 +42,6 @@ public class NewOffer extends AppCompatActivity {
     private Button btnRemove;
     private ConstraintLayout layContent;
     private ConstraintLayout layModal;
-    private FloatingActionButton helpButton;
     private TextView txtTitulo;
     private FloatingActionButton users;
     private Offer o;
@@ -69,7 +68,6 @@ public class NewOffer extends AppCompatActivity {
         btnInscrib = findViewById(R.id.btnInscrib);
         btnEdit = findViewById(R.id.btnEdit);
         btnRemove = findViewById(R.id.btnRemove);
-        helpButton = findViewById(R.id.helpButton);
         layContent = findViewById(R.id.layContent);
         layModal = findViewById(R.id.layModal);
         txtTitulo = findViewById(R.id.textView2);
