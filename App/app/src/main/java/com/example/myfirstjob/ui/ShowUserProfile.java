@@ -19,12 +19,12 @@ public class ShowUserProfile extends AppCompatActivity {
 
     private int offerID;
     private String userEmail;
-    private String offerName;
     private Offer offer;
     //private User user;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        String offerName;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_user_profile);
         Bundle bundle = getIntent().getExtras();
@@ -110,8 +110,6 @@ public class ShowUserProfile extends AppCompatActivity {
                 offer.removeUser(this.userEmail);
             }
             manage.updateOffers(this, offer);
-        } else {
-            // Ha ocurrido algún error
         }
     }
 
