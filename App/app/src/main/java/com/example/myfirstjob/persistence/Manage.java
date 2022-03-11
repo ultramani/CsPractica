@@ -123,7 +123,7 @@ public class Manage {
                 return offer = a;
             }
         }
-        return null;
+        return offer;
     }
 
 }
