@@ -24,7 +24,8 @@ public class GalleryFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-     private GalleryViewModel galleryViewModel;
+        private GalleryViewModel galleryViewModel;
+
         galleryViewModel =
                 new ViewModelProvider(this).get(GalleryViewModel.class);
 
