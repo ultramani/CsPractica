@@ -21,11 +21,11 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class GalleryFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
     private FragmentGalleryBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
+        private GalleryViewModel galleryViewModel;
         galleryViewModel =
                 new ViewModelProvider(this).get(GalleryViewModel.class);
 
