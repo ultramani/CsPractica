@@ -20,12 +20,12 @@ import com.example.myfirstjob.ui.UserView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class GalleryFragment extends Fragment {
-
     private FragmentGalleryBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         private GalleryViewModel galleryViewModel;
+
         galleryViewModel =
                 new ViewModelProvider(this).get(GalleryViewModel.class);
 
