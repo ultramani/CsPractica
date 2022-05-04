@@ -94,9 +94,11 @@ public class User implements Serializable {
      * @param pass2
      * @return true si se ha cambiado correctamente
      */
+    
     public boolean changePassword(String old, String pass, String pass2) {
         if (this.password.equals(old) && (pass.equals(pass2))) {
             this.password = pass;
+            return true;
         }
         return false;
     }
