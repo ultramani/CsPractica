@@ -23,33 +23,43 @@ public class SignUpScreen extends AppCompatActivity {
     }
 
     public void storeUser(View view) {
-        generateUser();
+    boolean correct = generateUser(view);
+
+    if (correct) {
         Intent i = new Intent(this, OfferViewerScreen.class);
         startActivity(i);
     }
+}
 
-    private void generateUser() {
-        EditText name = findViewById(R.id.Name);
-        String Sname = name.getText().toString();
-        name.setText(Sname);
-        EditText email = findViewById(R.id.Email);
-        String Semail = email.getText().toString();
-        name.setText(Semail);
-        EditText passwd = findViewById(R.id.Password);
-        String Spasswd = passwd.getText().toString();
-        name.setText(Spasswd);
-        EditText dni = findViewById(R.id.DNI);
-        String Sdni = dni.getText().toString();
-        name.setText(Sdni);
-        EditText studies = findViewById(R.id.Studies);
-        String Sstudies = studies.getText().toString();
-        name.setText(Sstudies);
-        EditText comp = findViewById(R.id.Company);
-        String Scomp = comp.getText().toString();
-        name.setText(Scomp);
+private boolean generateUser(View view) {
+    EditText name = findViewById(R.id.Name);
+    String Sname = name.getText().toString();
+    name.setText(Sname);
+    EditText email = findViewById(R.id.Email);
+    String Semail = email.getText().toString();
+    name.setText(Semail);
+    EditText passwd = findViewById(R.id.Password);
+    String Spasswd = passwd.getText().toString();
+    name.setText(Spasswd);
+    EditText dni = findViewById(R.id.DNI);
+    String Sdni = dni.getText().toString();
+    name.setText(Sdni);
+    EditText studies = findViewById(R.id.Studies);
+    String Sstudies = studies.getText().toString();
+    name.setText(Sstudies);
+    EditText comp = findViewById(R.id.Company);
+    String Scomp = comp.getText().toString();
+    name.setText(Scomp);
+
+    if (signUp.comprobationPattern(Semail)) {
         signUp.doOperation(Sname, Semail, Sdni, Spasswd, Sstudies, Scomp);
-        finish();
+        return true;
+    } else {
+        Snackbar snack = Snackbar.make(view, "Email incorrecto", 10000);
+        snack.show();
+        return false;
     }
+}
 
     public Context getAppContext() {
         return this;
