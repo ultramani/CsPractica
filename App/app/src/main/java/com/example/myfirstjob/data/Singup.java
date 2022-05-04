@@ -11,7 +11,11 @@ public class Singup {
     public Singup(Context context) {
         this.context = context;
     }
+    
+    public Singup() {
 
+    }
+    
     /**
      * Operación por defecto de la clase Registrarse
      *
