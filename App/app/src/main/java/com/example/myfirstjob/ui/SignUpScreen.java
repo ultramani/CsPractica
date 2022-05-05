@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.myfirstjob.R;
 import com.example.myfirstjob.data.Singup;
+import com.google.android.material.snackbar.Snackbar;
 
 public class SignUpScreen extends AppCompatActivity {
 
@@ -52,8 +53,14 @@ private boolean generateUser(View view) {
     name.setText(Scomp);
 
     if (signUp.comprobationPattern(Semail)) {
-        signUp.doOperation(Sname, Semail, Sdni, Spasswd, Sstudies, Scomp);
-        return true;
+        if (signUp.dnicomprobationPattern(Sdni)) {
+            signUp.doOperation(Sname, Semail, Sdni, Spasswd, Sstudies, Scomp);
+            return true;
+        }else{
+            Snackbar snack = Snackbar.make(view, "Dni incorrecto", 10000);
+            snack.show();
+            return false;
+        }
     } else {
         Snackbar snack = Snackbar.make(view, "Email incorrecto", 10000);
         snack.show();

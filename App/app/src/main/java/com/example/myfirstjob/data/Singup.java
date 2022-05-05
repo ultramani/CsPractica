@@ -5,6 +5,9 @@ import android.content.Context;
 import com.example.myfirstjob.persistence.Manage;
 import com.example.myfirstjob.ui.UserView;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class Singup {
     private Context context;
 
@@ -49,6 +52,13 @@ public class Singup {
     Matcher mat = pattern.matcher(email);
     boolean match= mat.matches();
     return match;
+    }
+
+    public boolean dnicomprobationPattern (String dni) {
+        Pattern pattern = Pattern.compile("^[0-9]{8}[A-Z]{1}$");
+        Matcher mat = pattern.matcher(dni);
+        boolean match= mat.matches();
+        return match;
     }
 
 }

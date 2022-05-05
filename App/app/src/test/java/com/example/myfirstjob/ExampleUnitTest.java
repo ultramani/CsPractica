@@ -1,6 +1,10 @@
 package com.example.myfirstjob;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+
+import com.example.myfirstjob.data.Singup;
+import com.example.myfirstjob.data.TypePassword;
 
 import org.junit.Test;
 
