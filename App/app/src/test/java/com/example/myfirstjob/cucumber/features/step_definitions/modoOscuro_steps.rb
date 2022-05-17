@@ -9,5 +9,5 @@ end
 Entonces('la aplicación cambia a modo oscuro') do
   #Se comprueba el valor de la variable de java del modo nocturno. En caso de ser 2, estaríamos en el modo nocturno.
   #En caso de ser 1, estáriamos en el modo claro.
-  #No hemos conseguido comprobar el valor de una variable de Java.
+  #No hemos conseguido comprobar el valor de una variable de Java..
 end
