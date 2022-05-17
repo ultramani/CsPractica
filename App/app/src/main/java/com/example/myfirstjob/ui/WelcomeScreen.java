@@ -25,6 +25,8 @@ public class WelcomeScreen extends AppCompatActivity {
                 if(swi.isChecked()){
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                     getDelegate().applyDayNight();
+
+
                 } else {
                     AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                     getDelegate().applyDayNight();
